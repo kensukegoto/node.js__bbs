@@ -1,0 +1,14 @@
+## 構造
+- app.js ... エントリポイント（サーバーの起動）
+- client/ ... クライアント側
+  - js
+  - css
+  - index.html
+- develop/ ... sassやes2015+
+  - js
+  - sass
+- server/ ... サーバー側（express）
+- .babelrc ... es2015+
+- package.json
+- gulpfile.js ... sassとwebpackの監視とコンパイル/トランスパイル
+- webpack.config.js ... webpackの設定（babelの適用も）
