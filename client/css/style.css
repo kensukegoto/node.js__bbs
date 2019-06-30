@@ -1,4 +1,77 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 14px;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.form__text, .form__textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.form__textarea {
+  padding: .5em;
+  line-height: 1.5;
+  height: 5.5em;
+}
+
+.form button {
+  border: none;
+  padding: .5em 1em;
+  background-color: #333333;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+}
+
+.form button:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.form button:focus {
+  outline: none;
+}
+
+.post {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.post dt > * {
+  display: inline-block;
+}
+
+.post dt .user {
+  font-weight: bold;
+}
+
+.post dt time {
+  color: #888;
+}
+
+.main__head {
+  padding: 1rem 0;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 2rem;
 }

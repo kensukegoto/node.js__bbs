@@ -1,4 +1,13 @@
-*{
-  padding: 0;
-  margin: 0;
+@import "global";
+
+@import "form";
+@import "posts";
+
+.main{
+  &__head{
+    padding: 1rem 0;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 2rem;
+  }
 }
+
