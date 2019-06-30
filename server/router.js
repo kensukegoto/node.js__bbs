@@ -1,5 +1,7 @@
 const router = require('express').Router();
 const { db_get , db_post} = require('./db');
+const multer = require('multer');
+const upload = multer();
 
 let lastId = 0;
 let saved = {};
@@ -8,9 +10,9 @@ let saved = {};
  * リクエストを受け付けてDBに登録
  * DBからデータを取得し返す
  */
-router.get('/post', function (req, res) {
+router.post('/post',upload.fields([]), function (req, res) {
 
-  db_post().then(()=>{
+  db_post(req.body).then(()=>{
 
     db_get(lastId).then((data)=>{
       const results = data.results;

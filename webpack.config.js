@@ -2,7 +2,7 @@ module.exports = {
   mode: 'development',
   entry: './develop/es2015/index.js',
   output:{
-    filename: 'main.js'
+    filename: 'index.js'
   },
   module: {
     rules: [

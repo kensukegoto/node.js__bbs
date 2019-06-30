@@ -29,11 +29,11 @@ const db_get = (lastId) =>{
   });
   
 }
-const db_post = () =>{
+const db_post = (body) =>{
 
   let = dummy = {
-    user: 'わし',
-    message: 'ダミーテキスト挿入',
+    user: body.user,
+    message: body.message,
     room: 1
   }
   
